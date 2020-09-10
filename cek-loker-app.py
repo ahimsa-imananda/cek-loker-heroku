@@ -3,6 +3,7 @@ import streamlit as st
 import numpy as np
 import time
 import pickle
+import nltk
 from nltk.tokenize import word_tokenize
 from nltk import pos_tag
 from nltk.corpus import stopwords
