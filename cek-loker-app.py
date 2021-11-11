@@ -9,21 +9,21 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from collections import defaultdict
 from nltk.corpus import wordnet as wn
-from googletrans import Translator
+#from googletrans import Translator
 
 def translate_input(title, company_profile, description, requirements, benefits):
-	translator =  Translator()
-	english_title = translator.translate(title, dest = 'en')
-	english_company_profile = translator.translate(company_profile, dest = 'en')
-	english_description = translator.translate(description, dest = 'en')
-	english_requirements = translator.translate(requirements, dest = 'en')
-	english_benefits = translator.translate(benefits, dest = 'en')
+	#translator =  Translator()
+	#english_title = translator.translate(title, dest = 'en')
+	#english_company_profile = translator.translate(company_profile, dest = 'en')
+	#english_description = translator.translate(description, dest = 'en')
+	#english_requirements = translator.translate(requirements, dest = 'en')
+	#english_benefits = translator.translate(benefits, dest = 'en')
 
-	english_title_value = english_title.text
-	english_company_profile_value = english_company_profile.text
-	english_description_value = english_description.text
-	english_requirements_value = english_requirements.text
-	english_benefits_value = english_benefits.text
+	english_title_value = title
+	english_company_profile_value = company_profile
+	english_description_value = description
+	english_requirements_value = requirements
+	english_benefits_value = benefits
 
 	return english_title_value, english_company_profile_value, english_description_value, english_requirements_value, english_benefits_value
 
